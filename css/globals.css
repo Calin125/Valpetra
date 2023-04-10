@@ -1,0 +1,51 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Allura:400");
+/* The following line is used to measure usage of this code in production. For more info see our usage billing page */
+@import url("https://px.animaapp.com/633e8df8118427ced710f1fb.633e8dfa26af54a213af643f.kUAVgVb.hcp.png");
+
+@font-face {
+  font-family: "MinervaModern-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/.5557.otf") format("opentype");
+}
+@font-face {
+  font-family: "Europa-Regular-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/EuropaRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "SofiaPro-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Sofia Pro Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Europa-Bold-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/EuropaBold.otf") format("opentype");
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+  color: #ffffff;
+}
+.container-center-horizontal {
+  justify-content: center;
+  margin: 0;
+}
+
+.container-center-horizontal > * {
+  pointer-events: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
