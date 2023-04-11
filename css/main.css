@@ -456,7 +456,6 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  height: 600px;
   max-width: 100%;
 }
 
@@ -2433,18 +2432,9 @@ dropdown:after {
 
   .nestled-in-the-heigh {
     font-size: var(--font-size-xxl);
-    position: relative;
-    color: var(--black);
-    font-family: var(--font-family-europa-light);
-    font-weight: 300;
-    letter-spacing: 0;
-    line-height: 30px;
-    text-align: center;
-    padding: 0 2em;
-    position: relative;
-    width: 80%;
-    margin: auto;
-    transform: translate(0%, -50%);
+    line-height: 35px;
+    padding: 0 1em;
+    width: 100%;
   }
 
   .nestled-in-the-heigh p{
@@ -2452,7 +2442,7 @@ dropdown:after {
   }
 
   .nestled-in-the-heigh span {
-    font-size: var(--font-size-xxxl);
+    font-size: var(--font-size-xxl);
     line-height: 10px;
 
   }
@@ -2470,8 +2460,6 @@ dropdown:after {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-
-    height: 600px;
   }
 
   .new-impressions-left {
@@ -2532,7 +2520,7 @@ dropdown:after {
   /* NEW LUXURY SECTION CSS START HERE */
 
   .new_luxury_section {
-    margin: 100px 5%;
+    margin: 100px 1%;
   }
 
   .new-luxury-background-top {
@@ -2576,7 +2564,7 @@ dropdown:after {
   }
 
   .red-title-subtext {
-    font-size: var(--font-size-xxl) !important;
+    font-size: var(--font-size-xl) !important;
     text-align: center;
   }
 
@@ -2626,12 +2614,13 @@ dropdown:after {
       'buttons'
       'image'
       'text';
-    gap: 20px;
+    gap: 15px;
   }
 
 
   .toggled-text-item {
     padding-bottom: 40px;
+    gap: 10px;
   }
 
   /* NEW LAYOUT SECTION CSS END HERE */
@@ -2645,7 +2634,7 @@ dropdown:after {
       'img2'
       'img3'
       'text';
-    padding: 0px 10%;
+    padding: 0px 5%;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
   }
@@ -3038,13 +3027,13 @@ dropdown:after {
 
 
   .valpetra-website-design-1 .axel-nl-container {
-    width: 294px;
+    width: 280px;
   }
 
   .valpetra-website-design-1 .axel-nl,
   .valpetra-website-design-1 .axel-nl-1 {
-    height: 289px;
-    width: 254px;
+    height: 260px;
+    width: 229px;
   }
 
   .valpetra-website-design-1 .group-91 {
