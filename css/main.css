@@ -26,7 +26,7 @@
   background-image: url(../img/rectangle-59@1x.png);
   background-position: 50% 50%;
   background-size: cover;
-  height: 536px;
+  height: 100%;
   left: 0;
   opacity: 0.03;
   position: absolute;
@@ -44,7 +44,10 @@
   text-align: center;
   padding: 0 2em;
   position: relative;
-  top: 6em;
+  width: 70%;
+  margin: auto;
+  top: 50%;
+  transform: translate(0%, -50%);
 }
 
 .nestled-in-the-heigh span {
@@ -80,7 +83,9 @@
 
 .subhero_section {
   position: relative;
-  height: 700px;
+  height: 500px;
+  z-index: 5;
+  top: -100px;
 }
 
 .valpetra-website-design-1 .path-91 {
@@ -146,7 +151,7 @@
   align-items: center;
   justify-content: center;
   gap: 47px;
-  bottom: 18em;
+  bottom: 40vh;
   max-width: 22em;
   padding: 25px 45px;
   background-color: var(--red);
@@ -1670,7 +1675,7 @@
 .valpetra-website-design-1 .rectangle-93 {
   background-color: #00000013;
   border: 1px solid;
-  border-color: #FFFFFF80;
+  border-color: #FFFFFF20;
   margin: auto;
   position: relative;
   max-width: 90%;
@@ -1788,16 +1793,19 @@ dropdown:after {
 .valpetra-website-design-1 .i-am-interested-in {
   letter-spacing: 0;
   white-space: nowrap;
+  font-family: var(--font-family-europa-light);
 }
 
 .valpetra-website-design-1 .place-1 {
   line-height: 22px;
   opacity: 0.35;
+  font-family: var(--font-family-europa-light) !important;
 }
 
 .valpetra-website-design-1 .phone-1 {
   line-height: 22px;
   opacity: 0.35;
+  font-family: var(--font-family-europa-light) !important;
 }
 
 .valpetra-website-design-1 .email {
@@ -1805,6 +1813,7 @@ dropdown:after {
   line-height: 22px;
   opacity: 0.35;
   white-space: nowrap;
+  font-family: var(--font-family-europa-light) !important;
 }
 
 .valpetra-website-design-1 .message {
@@ -1812,6 +1821,7 @@ dropdown:after {
   line-height: 22px;
   opacity: 0.35;
   white-space: nowrap;
+  font-family: var(--font-family-europa-light) !important;
 }
 
 .valpetra-website-design-1 .group-105 {
@@ -1899,7 +1909,7 @@ dropdown:after {
   min-height: 1000px;
   width: 100%;
   max-width: 1440px;
-  padding: 0px 20px;
+  padding: 0px 7%;
 }
 
 .valpetra-website-design-1 .address-group {
@@ -2025,7 +2035,6 @@ dropdown:after {
 }
 
 .valpetra-website-design-1 .screenshot-2023-03-07-at-172854 {
-  mix-blend-mode: luminosity;
   width: 100%;
 }
 
@@ -2347,23 +2356,42 @@ dropdown:after {
   }
 
   .subhero_section {
-    height: 100px;
+    position: relative;
+    height: 300px;
+    z-index: 5;
+    top: 0px;
   }
 
   .subhero-logo {
-    height: 268px;
-    width: 251px;
+    height: 80%;
+    margin-top: 5%;
+    width: 250px;
   }
 
   .nestled-in-the-heigh {
     font-size: var(--font-size-xs);
-    line-height: 25px;
     position: relative;
-    top: 6em;
+    color: var(--black);
+    font-family: var(--font-family-europa-light);
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 2em;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    transform: translate(0%, -50%);
+  }
+
+  .nestled-in-the-heigh p{
+    line-height: 10px;
   }
 
   .nestled-in-the-heigh span {
     font-size: var(--font-size-xl);
+    line-height: 10px;
+
   }
 
   /* NEW IMPRESSIONS SECTION CSS START HERE */
@@ -2451,7 +2479,7 @@ dropdown:after {
     left: -50px;
     top: 80px;
   }
-  
+
   .new-luxury-background-middle {
     position: absolute;
     height: 85%;
@@ -2459,7 +2487,7 @@ dropdown:after {
     left: -50px;
     top: 7%;
   }
-  
+
   .new-luxury-background-bottom {
     position: absolute;
     width: 130%;
@@ -2529,64 +2557,64 @@ dropdown:after {
 
   /* NEW SPECIAL CHALLET SECTION CSS START HERE */
 
-.new-special-challet-grid {
-  display: grid;
-  grid-template-areas:
-    'img1'
-    'img2'
-    'img3'
-    'text';
-  padding: 0px 10%;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr ;
-}
+  .new-special-challet-grid {
+    display: grid;
+    grid-template-areas:
+      'img1'
+      'img2'
+      'img3'
+      'text';
+    padding: 0px 10%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
 
-.new-special-challet-img1 {
-  transform: rotate(-2deg) scale(1.1);
-}
+  .new-special-challet-img1 {
+    transform: rotate(-2deg) scale(1.1);
+  }
 
-.new-special-challet-img2 {
-  transform: rotate(3deg) scale(1.1);
-}
+  .new-special-challet-img2 {
+    transform: rotate(3deg) scale(1.1);
+  }
 
-.new-special-challet-img3 {
-  transform: rotate(-4deg) scale(1.1);
-  top: 0px;
-}
+  .new-special-challet-img3 {
+    transform: rotate(-4deg) scale(1.1);
+    top: 0px;
+  }
 
-.new-special-challet-text {
-  padding: 30px 0px;
-}
+  .new-special-challet-text {
+    padding: 30px 0px;
+  }
 
-.valpetra-website-design-1 .high-end-experiences {
-  display: none;
-}
+  .valpetra-website-design-1 .high-end-experiences {
+    display: none;
+  }
 
-.valpetra-website-design-1 .high-end-experiences-inline {
-  font-size: var(--font-size-xxl);
-  display: block;
-  text-align: right;
-}
+  .valpetra-website-design-1 .high-end-experiences-inline {
+    font-size: var(--font-size-xxl);
+    display: block;
+    text-align: right;
+  }
 
-.new-special-challet-text p {
-  color: var(--black);
-  font-family: var(--font-family-europa-light-light);
-  font-size: var(--font-size-xl);
-  font-weight: 300;
-  letter-spacing: 0;
-}
+  .new-special-challet-text p {
+    color: var(--black);
+    font-family: var(--font-family-europa-light-light);
+    font-size: var(--font-size-xl);
+    font-weight: 300;
+    letter-spacing: 0;
+  }
 
-.new-special-challet-text-1 {
-  text-align: left;
-  padding-right: 60px;
-}
+  .new-special-challet-text-1 {
+    text-align: left;
+    padding-right: 60px;
+  }
 
-.new-special-challet-text-2 {
-  text-align: right;
-  padding-left: 60px;
-}
+  .new-special-challet-text-2 {
+    text-align: right;
+    padding-left: 60px;
+  }
 
-/* NEW SPECIAL CHALLET SECTION CSS END HERE */
+  /* NEW SPECIAL CHALLET SECTION CSS END HERE */
 
   /* ABOVE HERE */
 
@@ -2968,11 +2996,11 @@ dropdown:after {
     width: 254px;
   }
 
-  
+
 
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) {
   .new-special-challet-text p {
     font-size: var(--font-size-xl);
   }
