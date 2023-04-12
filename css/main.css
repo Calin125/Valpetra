@@ -53,7 +53,7 @@
 
 .nestled-in-the-heigh {
   color: var(--black);
-  font-family: var(--font-family-europa-light);
+  font-family: var(--font-family-europa-light-light);
   font-size: var(--font-size-xxxxl);
   font-weight: 300;
   letter-spacing: 0;
@@ -86,6 +86,7 @@
   object-fit: cover;
   position: relative;
   width: 100%;
+  min-height: 80vh;
 }
 
 .hero-section {
@@ -204,11 +205,10 @@
   background-color: transparent;
   display: flex;
   flex-direction: row;
-  height: 79px;
+  height: 100px;
   justify-content: space-between;
   padding: 0px 3%;
   position: fixed;
-  top: 14px;
   width: 100%;
   z-index: 20;
 }
@@ -314,11 +314,91 @@
   align-items: flex-end;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+
   justify-content: center;
   min-height: 23px;
   width: 35px;
 }
+
+/* HEADER MENU BUTTON CSS START HERE */
+
+.header-menu-btn{
+  height: 28px;
+  width: 39px;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.header-menu-btn-line-top{
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+
+.header-menu-btn-line-middle{
+  height: 1px;
+  width: 50%;
+  background-color: white;
+}
+
+.header-menu-btn-line-bottom{
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+
+.navbar-menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 700px;
+  width: 600px;
+  max-width: 100%;
+  background-color: #F0F0F0;
+  padding: 50px;
+  display: none;
+}
+
+.close-btn img{
+  height: 40px;
+  float: right;
+  fill: black;
+  cursor: pointer;
+}
+
+.navbar-menu-links{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 100%;
+}
+
+.navbar-menu-links li{
+  font-family: var(--font-family-europa-light-light);
+  font-size: 34px;
+  font-weight: 300 !important;
+  color: black;
+}
+
+.navbar-menu-links li a{
+  color: black;
+  font-weight: 300;
+}
+
+.navbar-menu-links li a:hover{
+  font-family: var(--font-family-europa-regular-regular);
+}
+
+.navbar-menu-links li a span{
+  color: var(--red);
+}
+
+/* HEADER MENU BUTTON CSS END HERE */
 
 .valpetra-website-design-1 .line {
   height: 1px;
@@ -511,7 +591,7 @@
 /* NEW LUXURY SECTION CSS START HERE */
 
 .new_luxury_section {
-  padding: 300px 50px;
+  padding: 300px 100px;
   margin-top: 100px;
   position: relative;
 }
@@ -1855,19 +1935,19 @@ dropdown:after {
 .valpetra-website-design-1 .i-am-interested-in {
   letter-spacing: 0;
   white-space: nowrap;
-  font-family: var(--font-family-europa-light);
+  font-family: var(--font-family-europa-light-light);
 }
 
 .valpetra-website-design-1 .place-1 {
   line-height: 22px;
   opacity: 0.35;
-  font-family: var(--font-family-europa-light) !important;
+  font-family: var(--font-family-europa-light-light) !important;
 }
 
 .valpetra-website-design-1 .phone-1 {
   line-height: 22px;
   opacity: 0.35;
-  font-family: var(--font-family-europa-light) !important;
+  font-family: var(--font-family-europa-light-light) !important;
 }
 
 .valpetra-website-design-1 .email {
@@ -1875,7 +1955,7 @@ dropdown:after {
   line-height: 22px;
   opacity: 0.35;
   white-space: nowrap;
-  font-family: var(--font-family-europa-light) !important;
+  font-family: var(--font-family-europa-light-light) !important;
 }
 
 .valpetra-website-design-1 .message {
@@ -1883,7 +1963,7 @@ dropdown:after {
   line-height: 22px;
   opacity: 0.35;
   white-space: nowrap;
-  font-family: var(--font-family-europa-light) !important;
+  font-family: var(--font-family-europa-light-light) !important;
 }
 
 .valpetra-website-design-1 .group-105 {
@@ -2007,9 +2087,10 @@ dropdown:after {
   margin: 50px 0px 100px 0px;
 }
 
-.broker-info-left {
-  display: flex;
-  justify-content: center;
+
+.broker-info-left img{
+  width: 90%;
+  height: auto;
 }
 
 .broker-info-right {
@@ -2347,6 +2428,19 @@ dropdown:after {
 }
 
 @media (max-width: 768px) {
+  /* HEADER MENU BUTTON CSS START HERE */
+
+.navbar-menu{
+  width: 90%;
+}
+
+.navbar-menu-links li{
+  font-size: 26px;
+}
+
+
+
+/* HEADER MENU BUTTON CSS END HERE */
   .valpetra-website-design-1 .header .group-left {
     gap: 15px;
   }
@@ -2434,7 +2528,7 @@ dropdown:after {
     font-size: var(--font-size-xxl);
     line-height: 35px;
     padding: 0 1em;
-    width: 100%;
+    width: 70%;
   }
 
   .nestled-in-the-heigh p{
@@ -2520,7 +2614,8 @@ dropdown:after {
   /* NEW LUXURY SECTION CSS START HERE */
 
   .new_luxury_section {
-    margin: 100px 1%;
+    margin: 100px 5%;
+    padding: 200px 0px;
   }
 
   .new-luxury-background-top {
@@ -2590,6 +2685,7 @@ dropdown:after {
   .luxury-item-title-text {
     font-size: var(--font-size-xxxl) !important;
     text-align: center;
+    line-height: 40px;
   }
 
   .luxury-item-logo {
