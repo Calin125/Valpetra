@@ -2525,10 +2525,10 @@ dropdown:after {
   }
 
   .nestled-in-the-heigh {
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xl);
     line-height: 35px;
     padding: 0 1em;
-    width: 70%;
+    width: 90%;
   }
 
   .nestled-in-the-heigh p{
@@ -2905,7 +2905,7 @@ dropdown:after {
   }
 
   .valpetra-website-design-1 .text-group {
-    padding: 40px;
+    padding: 30px;
   }
 
   .valpetra-website-design-1 .the-valpetra-chalet {
@@ -3086,6 +3086,13 @@ dropdown:after {
 
   .valpetra-website-design-1 .broker-info-right {
     align-items: center;
+  }
+
+  .broker-info-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px;
   }
 
   .valpetra-website-design-1 .rectangle {
