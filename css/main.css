@@ -43,11 +43,11 @@
   background-image: url(../img/rectangle-59@1x.png);
   background-position: 50% 50%;
   background-size: cover;
-  height: 100%;
+  height: 80%;
   left: 0;
   opacity: 0.03;
   position: absolute;
-  top: 0;
+  top: 10%;
   width: 503px;
 }
 
@@ -118,9 +118,9 @@
 
 .subhero_section {
   position: relative;
-  height: 500px;
+  height: 700px;
   z-index: 5;
-  top: -100px;
+  top: -50px;
 }
 
 .valpetra-website-design-1 .path-91 {
@@ -2540,11 +2540,12 @@ dropdown:after {
     height: 300px;
     z-index: 5;
     top: 0px;
+    margin: 0px 0px;
   }
 
   .subhero-logo {
     height: 80%;
-    margin-top: 5%;
+    top: 00%;
     width: 250px;
   }
 
@@ -3206,7 +3207,7 @@ dropdown:after {
     font-size: var(--font-size-xl);
     line-height: 35px;
     padding: 0 1em;
-    width: 80%;
+    width: 70%;
   }
 
   .nestled-in-the-heigh p{
@@ -3218,6 +3219,19 @@ dropdown:after {
     line-height: 10px;
     margin-top: 500px;
   }
+
+  .subhero_section{
+    height: 300px;
+    margin: 50px 0px;
+  }
+
+  .subhero-logo{
+    height: 80%;
+    top: 10%;
+    width: 250px;
+  }
+
+
 }
 
 @media (min-width: 1440px) {
