@@ -49,14 +49,6 @@ document.getElementById('open-btn').addEventListener('click', toggleMobileMenuDi
 
 //Code to toggle the layout content - start
 
-// function addEventListeners(){
-//     var buttons = document.getElementsByClassName('layout-tab-buttons');
-//     buttons.forEach(button =>{
-//         button.addEventListener('click',handleLayoutToggle)
-//     })
-//     console.log(buttons)
-// }
-
 var buttons = document.querySelectorAll('.layout-tab-buttons');
 var contents = document.querySelectorAll('.new-layout-toggled-text');
 var images =document.querySelectorAll('.new-layout-img-container')
@@ -76,3 +68,13 @@ buttons.forEach((button,index)=>{
 })
 
 //Code to toggle the layout content - end
+
+// Code for versatility animation - start
+
+window.addEventListener('scroll', ()=>{
+    var pageY = window.pageYOffset;
+    var versatility = document.getElementById('versatilitySlider');
+    // versatility.style.left = 
+})
+
+// Code for versatility animation - end

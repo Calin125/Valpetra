@@ -788,7 +788,7 @@
 
 .toggled-text-item-text {
   color: var(--cape-cod);
-  font-family: var(--font-family-europa-light);
+  font-family: var(--font-family-europa-light-light);
   font-size: var(--font-size-m);
   font-weight: 300;
   height: 107px;
@@ -885,7 +885,7 @@
 
 .new-special-challet-text p {
   color: var(--black);
-  font-family: var(--font-family-europa-light);
+  font-family: var(--font-family-europa-light-light);
   font-size: 2vw;
   font-weight: 300;
   letter-spacing: 0;
@@ -1699,6 +1699,9 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3vw;
   margin-bottom: 10vw;
+  transform: translateX(-60%);
+  position: relative;
+  left: 60%;
 }
 
 .versitality-image-item:nth-child(odd){
@@ -1709,10 +1712,6 @@
   width: 50vw;
 }
 
-.versatility-slide-images-left{
-  transform: translateX(-50%);
-  transition: all 20s;
-}
 
 /* ADDED VERSITALITY CLASS SELECTORS END */
 
@@ -2758,6 +2757,7 @@ dropdown:after {
     padding: 0px 5%;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+    max-width: 500px;
   }
 
   .new-special-challet-img1 {
