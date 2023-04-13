@@ -3201,6 +3201,23 @@ dropdown:after {
     font-size: var(--font-size-l);
 
   }
+
+  .nestled-in-the-heigh {
+    font-size: var(--font-size-xl);
+    line-height: 35px;
+    padding: 0 1em;
+    width: 80%;
+  }
+
+  .nestled-in-the-heigh p{
+    line-height: 10px;
+  }
+
+  .nestled-in-the-heigh span {
+    font-size: var(--font-size-xxl);
+    line-height: 10px;
+    margin-top: 500px;
+  }
 }
 
 @media (min-width: 1440px) {

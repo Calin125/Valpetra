@@ -35,7 +35,7 @@
 
 .minervamodern-regular-normal-black-44px {
   color: var(--black);
-  font-family: var(--font-family-minervamodern-regular);
+  font-family: var(--font-family-minervamodern);
   font-size: 44px;
   font-style: normal;
   font-weight: 400;
@@ -75,7 +75,7 @@
 
 .minervamodern-regular-normal-black-74px {
   color: var(--black);
-  font-family: var(--font-family-minervamodern-regular);
+  font-family: var(--font-family-minervamodern);
   font-size: var(--font-size-xxxxxl);
   font-style: normal;
   font-weight: 400;
@@ -99,7 +99,7 @@
 
 .minervamodern-regular-normal-cape-cod-74px {
   color: var(--cape-cod);
-  font-family: var(--font-family-minervamodern-regular);
+  font-family: var(--font-family-minervamodern);
   font-size: var(--font-size-xxxxxl);
   font-style: normal;
   font-weight: 400;
@@ -107,7 +107,7 @@
 
 .minervamodern-regular-normal-monza-74px {
   color: var(--monza);
-  font-family: var(--font-family-minervamodern-regular);
+  font-family: var(--font-family-minervamodern);
   font-size: var(--font-size-xxxxxl);
   font-style: normal;
   font-weight: 400;
