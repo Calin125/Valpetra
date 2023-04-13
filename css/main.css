@@ -107,7 +107,7 @@
 .image-overlay-container
 {
   position: absolute;
-  bottom: -40px;
+  bottom:-10px;
   left: 0;
   right: 0px;
 }
@@ -120,7 +120,7 @@
   position: relative;
   height: 700px;
   z-index: 5;
-  top: -50px;
+  margin: 0px 0px;
 }
 
 .valpetra-website-design-1 .path-91 {
@@ -194,7 +194,6 @@
 
 .cover-mobile {
   display: none;
-  height: 80vh;
 }
 
 .valpetra-website-design-1 .explore-valpetra {
@@ -372,7 +371,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  height: 700px;
+  height: 100vh;
   width: 600px;
   max-width: 100%;
   background-color: #F0F0F0;
@@ -1699,19 +1698,19 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3vw;
   margin-bottom: 10vw;
-  transform: translateX(-60%);
   position: relative;
-  left: 60%;
-}
-
-.versitality-image-item:nth-child(odd){
-  padding-top: 3vw;
+  align-items: center;
+  justify-content: center;
+  left: -0.5vw;
 }
 
 .versitality-image-item img{
-  width: 50vw;
+  width: 600px;
 }
 
+.versitality-image-item:nth-child(odd){
+  padding-top: 75px;
+}
 
 /* ADDED VERSITALITY CLASS SELECTORS END */
 
@@ -2455,6 +2454,7 @@ dropdown:after {
 
 .navbar-menu{
   width: 90%;
+  height: 100vh;
 }
 
 .navbar-menu-links li{
@@ -2505,6 +2505,8 @@ dropdown:after {
 
   .hero-section {
     margin-bottom: -6em;
+    height: 100vh;
+    overflow: hidden;
   }
 
   .white-logo {
@@ -2515,14 +2517,14 @@ dropdown:after {
 
   .cover-mobile {
     display: block;
-    height: 100vh;
+    height: 100%;
   }
 
   .hero-button {
     gap: 35px;
     padding: 20px 45px;
     max-width: 18em;
-    bottom: 15em;
+    bottom: 10em;
   }
 
   .valpetra-website-design-1 .explore-valpetra {
@@ -2540,7 +2542,7 @@ dropdown:after {
     height: 300px;
     z-index: 5;
     top: 0px;
-    margin: 0px 0px;
+    margin: 50px 0px;
   }
 
   .subhero-logo {
@@ -2554,6 +2556,7 @@ dropdown:after {
     line-height: 35px;
     padding: 0 1em;
     width: 90%;
+    margin: 100px auto 0px auto;
   }
 
   .nestled-in-the-heigh p{
@@ -2906,6 +2909,10 @@ dropdown:after {
     margin: auto;
   }
 
+  .versitality-image-container{
+    top: -75px;
+  }
+
   .flex-row-6 {
     flex-direction: column-reverse;
   }
@@ -3006,6 +3013,14 @@ dropdown:after {
     margin-top: 0.5em;
   }
 
+  .versitality-image-item img{
+    width: 300px;
+  }
+
+  .versitality-image-item:nth-child(odd){
+    padding-top: 50px;
+  }
+
 
   .valpetra-website-design-1 .i-am-interested-in {
     letter-spacing: 0;
@@ -3017,6 +3032,7 @@ dropdown:after {
     width: 150px;
     font-size: var(--font-size-s) !important;
   }
+
 
   g .valpetra-website-design-1 .form-input {
     margin-top: 0px;
@@ -3175,6 +3191,7 @@ dropdown:after {
     gap: 10px;
   }
 
+
 }
 
 @media (max-width: 1024px) {
@@ -3197,42 +3214,7 @@ dropdown:after {
 
 }
 
-@media (max-width: 1440px) {
-  .new-special-challet-text p {
-    font-size: var(--font-size-l);
 
-  }
-
-  .nestled-in-the-heigh {
-    font-size: var(--font-size-xl);
-    line-height: 35px;
-    padding: 0 1em;
-    width: 70%;
-  }
-
-  .nestled-in-the-heigh p{
-    line-height: 10px;
-  }
-
-  .nestled-in-the-heigh span {
-    font-size: var(--font-size-xxl);
-    line-height: 10px;
-    margin-top: 500px;
-  }
-
-  .subhero_section{
-    height: 300px;
-    margin: 50px 0px;
-  }
-
-  .subhero-logo{
-    height: 80%;
-    top: 10%;
-    width: 250px;
-  }
-
-
-}
 
 @media (min-width: 1440px) {
   .new-special-challet-text p {
