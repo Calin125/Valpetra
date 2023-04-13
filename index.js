@@ -1,3 +1,5 @@
+// Code to update the header on scroll - start
+
 function updateHeader(){
     var scrollValue = window.scrollY;
     var header = document.getElementById('header');
@@ -28,6 +30,10 @@ function updateHeader(){
 
 window.addEventListener('scroll', updateHeader);
 
+// Code to update the header on scroll - start
+
+// Code to toggle the visibility of the navbar menu - start
+
 function toggleMobileMenuDisplay(){
     if(document.getElementById('navbarMenu').style.display == 'block'){
         document.getElementById('navbarMenu').style.display = 'none';
@@ -38,3 +44,35 @@ function toggleMobileMenuDisplay(){
 
 document.getElementById('close-btn').addEventListener('click', toggleMobileMenuDisplay)
 document.getElementById('open-btn').addEventListener('click', toggleMobileMenuDisplay)
+
+// Code to toggle the visibility of the navbar menu - end
+
+//Code to toggle the layout content - start
+
+// function addEventListeners(){
+//     var buttons = document.getElementsByClassName('layout-tab-buttons');
+//     buttons.forEach(button =>{
+//         button.addEventListener('click',handleLayoutToggle)
+//     })
+//     console.log(buttons)
+// }
+
+var buttons = document.querySelectorAll('.layout-tab-buttons');
+var contents = document.querySelectorAll('.new-layout-toggled-text');
+var images =document.querySelectorAll('.new-layout-img-container')
+
+buttons.forEach((button,index)=>{
+    button.addEventListener('click',(e)=>{
+        buttons.forEach(button=>{button.classList.remove('layout-active-btn')});
+        button.classList.add('layout-active-btn');
+        
+        images.forEach(image=>{image.classList.remove('layout-active-img')})
+        images[index].classList.add('layout-active-img')
+
+        contents.forEach(content=>{content.classList.remove('layout-content-active')})
+        contents[index].classList.add('layout-content-active')
+    })
+
+})
+
+//Code to toggle the layout content - end
