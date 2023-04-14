@@ -6,20 +6,21 @@
   width: 100%;
 }
 
-.header-background-change{
+.header-background-change {
   backdrop-filter: blur(50px);
   color: black !important;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.header-background-color-change{
+.header-background-color-change {
   background-color: black !important;
 }
 
-.header-border-color-change{
+.header-border-color-change {
   border-color: black !important;
 }
 
-.hamburger-svg{
+.hamburger-svg {
   fill: black !important;
 }
 
@@ -104,15 +105,14 @@
   display: none;
 }
 
-.image-overlay-container
-{
+.image-overlay-container {
   position: absolute;
-  bottom:-10px;
+  bottom: -10px;
   left: 0;
   right: 0px;
 }
 
-.image-overlay-container img{
+.image-overlay-container img {
   width: 100%;
 }
 
@@ -338,7 +338,7 @@
 
 /* HEADER MENU BUTTON CSS START HERE */
 
-.header-menu-btn{
+.header-menu-btn {
   height: 28px;
   width: 39px;
   padding: 2px;
@@ -349,44 +349,45 @@
   cursor: pointer;
 }
 
-.header-menu-btn-line-top{
+.header-menu-btn-line-top {
   height: 1px;
   width: 100%;
   background-color: white;
 }
 
-.header-menu-btn-line-middle{
+.header-menu-btn-line-middle {
   height: 1px;
   width: 50%;
   background-color: white;
 }
 
-.header-menu-btn-line-bottom{
+.header-menu-btn-line-bottom {
   height: 1px;
   width: 100%;
   background-color: white;
 }
 
-.navbar-menu{
+.navbar-menu {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   height: 100vh;
   width: 600px;
   max-width: 100%;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   padding: 50px;
-  display: none;
 }
 
-.close-btn img{
-  height: 40px;
+.close-btn img {
+  height: 45px;
   float: right;
   fill: black;
   cursor: pointer;
+  margin-top: -1.2em;
+  margin-right: -1.2em;
 }
 
-.navbar-menu-links{
+.navbar-menu-links {
   padding-top: 50px;
   display: flex;
   flex-direction: column;
@@ -394,23 +395,25 @@
   height: 100%;
 }
 
-.navbar-menu-links li{
+.navbar-menu-links li {
   font-family: var(--font-family-europa-light-light);
   font-size: 34px;
   font-weight: 300 !important;
   color: black;
+  opacity: 0;
 }
 
-.navbar-menu-links li a{
+.navbar-menu-links li a {
   color: black;
   font-weight: 300;
 }
 
-.navbar-menu-links li a:hover{
-  font-family: var(--font-family-europa-regular-regular);
+.navbar-menu-links li a:hover {
+  color: var(--red);
+  /* font-family: var(--font-family-europa-regular-regular); */
 }
 
-.navbar-menu-links li a span{
+.navbar-menu-links li a span {
   color: var(--red);
 }
 
@@ -539,7 +542,6 @@
   margin-top: 5em;
 }
 
-
 /* NEW IMPRESSIONS SECTION CSS START HERE */
 
 .impressions_section_new {
@@ -589,9 +591,6 @@
   background-color: black;
 }
 
-
-
-
 .new-impressions-right {
   width: 100%;
 }
@@ -628,7 +627,7 @@
   top: 10%;
 }
 
-.new-special-background-middle{
+.new-special-background-middle {
   position: absolute;
   height: 40%;
   z-index: 0;
@@ -688,7 +687,7 @@
   width: 100%;
 }
 
-.luxury-item-description{
+.luxury-item-description {
   font-family: var(--font-family-europa-light) !important;
 }
 
@@ -710,9 +709,9 @@
 .new-layout-toggle-container {
   display: grid;
   grid-template-areas:
-    'buttons image image'
-    'text image image'
-    'text image image';
+    "buttons image image"
+    "text image image"
+    "text image image";
   gap: 5vw;
   max-width: 1440px;
   padding: 0 2em;
@@ -738,7 +737,7 @@
   color: white !important;
 }
 
-.layout-content-active{
+.layout-content-active {
   display: block !important;
 }
 
@@ -748,7 +747,7 @@
   display: none;
 }
 
-.layout-active-img{
+.layout-active-img {
   display: block;
 }
 
@@ -768,7 +767,7 @@
   gap: 30px;
   padding-bottom: 20px;
   padding-top: 20px;
-  border-bottom: 1px solid #AAAAAA;
+  border-bottom: 1px solid #aaaaaa;
 }
 
 .toggled-text-item:last-child {
@@ -799,7 +798,7 @@
 
 /* NEW SPECIAL CHALLET SECTION CSS START HERE */
 
-.new_special_challet_section{
+.new_special_challet_section {
   padding: 250px 50px;
   margin-top: 100px;
   position: relative;
@@ -808,8 +807,8 @@
 .new-special-challet-grid {
   display: grid;
   grid-template-areas:
-    'img1 img2'
-    'text img3';
+    "img1 img2"
+    "text img3";
   max-width: 1440px;
   padding: 0px 10%;
   margin: auto;
@@ -901,7 +900,6 @@
 }
 
 /* NEW SPECIAL CHALLET SECTION CSS END HERE */
-
 
 .luxury-section-grid {
   width: 100%;
@@ -1692,24 +1690,40 @@
 
 /* ADDED VERSITALITY CLASS SELECTORS START */
 
-.versitality-image-container{
+.versitality-image-container {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3vw;
+  display: flex;
   margin-bottom: 10vw;
   position: relative;
   align-items: center;
   justify-content: center;
-  left: -0.5vw;
 }
 
-.versitality-image-item img{
-  width: 600px;
+.versitality-image-item img {
+  width: 80%;
+  height: 60vh;
+  object-fit: cover;
+  transition: all 0.5s ease;
+  /* padding: 0 1.5em; */
+}
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
 }
 
-.versitality-image-item:nth-child(odd){
-  padding-top: 75px;
+.slick-center {
+  z-index: 1;
+  margin-top: -75px;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.slick-center img {
+  transform: scale(1.2);
+  transition: all 0.7s ease;
+}
+.slick-list {
+  overflow: visible !important;
 }
 
 /* ADDED VERSITALITY CLASS SELECTORS END */
@@ -1773,15 +1787,17 @@
 }
 
 .valpetra-website-design-1 .rectangle-79 {
-  background: linear-gradient(180deg,
-      rgba(40, 36, 37, 0) 0%,
-      rgba(40, 36, 37, 0.72) 15.74%,
-      rgba(40, 36, 37, 0.81) 17.13%,
-      #282425 28.06%,
-      #282425 41.67%,
-      rgba(40, 36, 37, 0.81) 60.66%,
-      rgba(40, 36, 37, 0.67) 68.99%,
-      rgba(40, 36, 37, 0) 94%);
+  background: linear-gradient(
+    180deg,
+    rgba(40, 36, 37, 0) 0%,
+    rgba(40, 36, 37, 0.72) 15.74%,
+    rgba(40, 36, 37, 0.81) 17.13%,
+    #282425 28.06%,
+    #282425 41.67%,
+    rgba(40, 36, 37, 0.81) 60.66%,
+    rgba(40, 36, 37, 0.67) 68.99%,
+    rgba(40, 36, 37, 0) 94%
+  );
   height: 853px;
   left: 0;
   position: absolute;
@@ -1820,7 +1836,7 @@
 .valpetra-website-design-1 .form-input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #AAAAAA;
+  border-bottom: 1px solid #aaaaaa;
   margin-bottom: 40px;
   margin-top: 10px;
   height: 40px;
@@ -1830,7 +1846,7 @@
 .form-message {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #AAAAAA;
+  border-bottom: 1px solid #aaaaaa;
   margin-bottom: 40px;
   margin-top: 10px;
   width: 100%;
@@ -1839,7 +1855,7 @@
 .valpetra-website-design-1 .rectangle-93 {
   background-color: #00000013;
   border: 1px solid;
-  border-color: #FFFFFF20;
+  border-color: #ffffff20;
   margin: auto;
   position: relative;
   max-width: 90%;
@@ -1888,7 +1904,6 @@
   height: 1px;
   object-fit: cover;
   width: 594px;
-
 }
 
 .valpetra-website-design-1 .get-in-touch {
@@ -1901,7 +1916,6 @@
   position: relative;
   white-space: nowrap;
   text-align: center;
-
 }
 
 .valpetra-website-design-1 .interested-group {
@@ -1917,7 +1931,7 @@
 
 .dropdown {
   background-color: #444444;
-  color: #AAAAAA;
+  color: #aaaaaa;
   padding: 10px;
   border: none;
   width: 200px;
@@ -2083,7 +2097,6 @@ dropdown:after {
   width: 100%;
   max-width: 1440px;
   margin: 50px 0px 100px 0px;
-
 }
 
 .valpetra-website-design-1 .address-group-left {
@@ -2109,8 +2122,7 @@ dropdown:after {
   margin: 50px 0px 100px 0px;
 }
 
-
-.broker-info-left img{
+.broker-info-left img {
   width: 90%;
   height: auto;
 }
@@ -2121,7 +2133,6 @@ dropdown:after {
   justify-content: flex-start;
   padding: 30px;
 }
-
 
 .valpetra-website-design-1 .contact-address {
   align-self: flex-start;
@@ -2363,7 +2374,6 @@ dropdown:after {
   font-size: 16px;
   font-weight: 300;
   line-height: 19px;
-
 }
 
 .valpetra-website-design-1 .npkf-alpes_promo_-va-1 {
@@ -2452,23 +2462,21 @@ dropdown:after {
 @media (max-width: 768px) {
   /* HEADER MENU BUTTON CSS START HERE */
 
-.navbar-menu{
-  width: 90%;
-  height: 100vh;
-}
+  .navbar-menu {
+    width: 90%;
+    height: 100vh;
+  }
 
-.navbar-menu-links li{
-  font-size: 26px;
-}
+  .navbar-menu-links li {
+    font-size: 22px;
+  }
 
-
-
-/* HEADER MENU BUTTON CSS END HERE */
+  /* HEADER MENU BUTTON CSS END HERE */
   .valpetra-website-design-1 .header .group-left {
     gap: 15px;
   }
 
-  .valpetra-website-design-1 .group-80 {
+  .slick-track .group-80 {
     display: flex;
     height: 80px;
   }
@@ -2559,7 +2567,7 @@ dropdown:after {
     margin: 100px auto 0px auto;
   }
 
-  .nestled-in-the-heigh p{
+  .nestled-in-the-heigh p {
     line-height: 10px;
   }
 
@@ -2623,7 +2631,6 @@ dropdown:after {
     font-size: var(--font-size-xxl) !important;
   }
 
-
   .new-impressions-right {
     width: 100%;
     position: relative;
@@ -2670,7 +2677,7 @@ dropdown:after {
     top: 7%;
   }
 
-  .new-special-background-middle{
+  .new-special-background-middle {
     position: absolute;
     height: 70%;
     z-index: 0;
@@ -2735,12 +2742,11 @@ dropdown:after {
 
   .new-layout-toggle-container {
     grid-template-areas:
-      'buttons'
-      'image'
-      'text';
+      "buttons"
+      "image"
+      "text";
     gap: 15px;
   }
-
 
   .toggled-text-item {
     padding-bottom: 40px;
@@ -2754,10 +2760,10 @@ dropdown:after {
   .new-special-challet-grid {
     display: grid;
     grid-template-areas:
-      'img1'
-      'img2'
-      'img3'
-      'text';
+      "img1"
+      "img2"
+      "img3"
+      "text";
     padding: 0px 5%;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
@@ -2909,7 +2915,7 @@ dropdown:after {
     margin: auto;
   }
 
-  .versitality-image-container{
+  .versitality-image-container {
     top: -75px;
   }
 
@@ -2964,7 +2970,6 @@ dropdown:after {
     margin-top: 0px;
   }
 
-
   .valpetra-website-design-1 .get-in-touch {
     font-size: var(--font-size-xxxl) !important;
     line-height: 30px;
@@ -2983,7 +2988,6 @@ dropdown:after {
     justify-content: space-between;
     align-items: center;
     margin: 40px 0px;
-
   }
 
   .valpetra-website-design-1 .overlap-group8-item {
@@ -3013,14 +3017,13 @@ dropdown:after {
     margin-top: 0.5em;
   }
 
-  .versitality-image-item img{
+  .versitality-image-item img {
     width: 300px;
   }
 
-  .versitality-image-item:nth-child(odd){
+  .versitality-image-item:nth-child(odd) {
     padding-top: 50px;
   }
-
 
   .valpetra-website-design-1 .i-am-interested-in {
     letter-spacing: 0;
@@ -3032,7 +3035,6 @@ dropdown:after {
     width: 150px;
     font-size: var(--font-size-s) !important;
   }
-
 
   g .valpetra-website-design-1 .form-input {
     margin-top: 0px;
@@ -3169,8 +3171,6 @@ dropdown:after {
     font-size: var(--font-size-xl) !important;
   }
 
-
-
   .valpetra-website-design-1 .axel-nl-container {
     width: 280px;
   }
@@ -3190,12 +3190,9 @@ dropdown:after {
     text-align: center;
     gap: 10px;
   }
-
-
 }
 
 @media (max-width: 1024px) {
-
   .rue-de-mdran-21,
   .address-1,
   .phone-2,
@@ -3209,19 +3206,14 @@ dropdown:after {
     height: 289px;
     width: 254px;
   }
-
-
-
 }
-
-
 
 @media (min-width: 1440px) {
   .new-special-challet-text p {
     font-size: var(--font-size-xl);
   }
 
-  .new-impressions-img{
+  .new-impressions-img {
     width: 1200px;
   }
 }
