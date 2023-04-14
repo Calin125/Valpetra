@@ -5,6 +5,7 @@ function updateHeader(){
     var header = document.getElementById('header');
     var verbier = document.getElementById('verbier');
     var line = document.getElementById('line');
+    var phone = document.getElementById('phone');
     var download = document.getElementById('download');  
     var lines = document.querySelectorAll('.menu-btn-lines');
 
@@ -12,6 +13,7 @@ function updateHeader(){
         header.classList.remove('header-background-change');
         verbier.classList.remove('header-background-change');
         line.classList.remove('header-background-color-change');
+        phone.classList.remove('header-color-change');
         download.classList.remove('header-border-color-change');
         lines.forEach(line => {
             line.classList.remove('header-background-color-change');
@@ -20,6 +22,7 @@ function updateHeader(){
         header.classList.add('header-background-change');
         verbier.classList.add('header-background-change');
         line.classList.add('header-background-color-change');
+        phone.classList.add('header-color-change');
         download.classList.add('header-border-color-change');
         lines.forEach(line => {
             line.classList.add('header-background-color-change');
