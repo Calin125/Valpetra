@@ -116,6 +116,41 @@ $(".versitality-image-container").slick({
     prevArrow: null,
     nextArrow: null,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     pauseOnHover: false,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
 });
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".subhero_section", {
+    yPercent: -100,
+    ease: "Power3.eaeOut",
+    scrollTrigger: {
+       trigger: ".subhero_section",
+       scrub: true,
+       start: "top 95%",
+       end: "bottom top"
+    }
+})
+       
+

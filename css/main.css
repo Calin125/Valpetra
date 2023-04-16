@@ -41,7 +41,7 @@
 }
 
 .subhero-logo {
-  background-image: url(../img/rectangle-59@1x.png);
+  background-image: url("../img/rectangle-59@1x.png");
   background-position: 50% 50%;
   background-size: cover;
   height: 80%;
@@ -64,7 +64,7 @@
   position: relative;
   width: 70%;
   margin: auto;
-  top: 50%;
+  top: 40%;
   transform: translate(0%, -50%);
 }
 
@@ -106,21 +106,22 @@
 }
 
 .image-overlay-container {
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  right: 0px;
+  position: relative;
+  width: 100%;
 }
 
 .image-overlay-container img {
   width: 100%;
+  margin-top: -100%;
 }
 
 .subhero_section {
   position: relative;
-  height: 700px;
+  height: 400px;
+  background-color: var(--white);
   z-index: 5;
-  margin: 0px 0px;
+  margin: -1px 0px;
+  margin-top: 2em;
 }
 
 .valpetra-website-design-1 .path-91 {
@@ -181,12 +182,12 @@
 }
 
 .hero-button {
-  position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 47px;
-  bottom: 10em;
+  bottom: 8em;
   max-width: 22em;
   padding: 25px 45px;
   background-color: var(--red);
@@ -261,7 +262,7 @@
 }
 
 .valpetra-website-design-1 .npkf-alpes_promo_-va {
-  height: 67px;
+  height: 80px;
   object-fit: cover;
 }
 
@@ -588,7 +589,7 @@
 .new-impressions-line {
   height: 1px;
   width: 60%;
-  background-color: black;
+  background-color: var(--red) !important;
 }
 
 .new-impressions-right {
@@ -659,11 +660,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 5em;
   margin: 30px 0px;
-}
-
-.luxury-item:nth-child(even) {
-  position: relative;
-  top: -130px;
 }
 
 .luxury-item {
@@ -1664,6 +1660,7 @@
   flex-direction: column;
   align-items: center;
   height: 136px;
+  margin-bottom: 60px;
   margin-top: 7px;
   position: relative;
   width: 100%;
@@ -1709,6 +1706,7 @@
 .slick-slide {
   display: flex !important;
   justify-content: center;
+  cursor: grab;
 }
 
 .slick-center {
@@ -2508,7 +2506,6 @@ dropdown:after {
   }
 
   .valpetra-website-design-1 .cover-1-1 {
-    display: none;
   }
 
   .hero-section {
@@ -2559,12 +2556,23 @@ dropdown:after {
     width: 250px;
   }
 
+  .new-luxury-section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .allura-normal-red-41px {
+    padding: 0;
+  }
+
   .nestled-in-the-heigh {
     font-size: var(--font-size-xl);
     line-height: 35px;
     padding: 0 1em;
     width: 90%;
     margin: 100px auto 0px auto;
+    top: 0;
   }
 
   .nestled-in-the-heigh p {
@@ -2583,6 +2591,8 @@ dropdown:after {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin-bottom: -5em;
+    margin-top: -8em;
   }
 
   .new-impressions-section-inner-container {
@@ -2596,7 +2606,7 @@ dropdown:after {
     transform: rotate(0deg);
     display: flex;
     align-items: flex-end;
-    height: 200px;
+    height: 80px;
     width: 90%;
   }
 
@@ -2617,18 +2627,26 @@ dropdown:after {
   .rotated-second-line {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
+    gap: 1em;
+  }
+  .sliding_text_section {
+    margin: 5em 0 0 0;
   }
 
-  .new-impressions-line {
+  .new_special_challet_section {
+    margin-top: 0;
+    padding: 170px 50px;
+  }
+  . .new-impressions-line {
     height: 1px;
-    width: 50%;
+    width: 30%;
     background-color: black;
   }
 
   .impressions-red-text {
-    font-size: var(--font-size-xxl) !important;
+    font-size: var(--font-size-xl) !important;
   }
 
   .new-impressions-right {
@@ -2643,6 +2661,9 @@ dropdown:after {
     min-width: 200px;
     object-fit: cover;
   }
+  .new-layout-toggle-buttons {
+    margin-bottom: 1em;
+  }
 
   /* NEW IMPRESSIONS SECTION CSS END HERE */
 
@@ -2653,6 +2674,9 @@ dropdown:after {
     padding: 200px 0px;
   }
 
+  .valpetra-website-design-1 .valpetra-chalet {
+    font-size: 65px;
+  }
   .new-luxury-background-top {
     position: absolute;
     width: 130%;
@@ -2730,13 +2754,23 @@ dropdown:after {
   .luxury-item-img {
     width: 100%;
   }
+  .new_special_challet_section {
+    padding: 50px 50px;
+    background-color: #f0f0f0;
+  }
+
+  .slick-center img {
+    transform: scale(1);
+    padding: 0 1.5em;
+    margin-top: 0;
+  }
 
   /* NEW LUXURY SECTION CSS END HERE */
 
   /* NEW LAYOUT SECTION CSS START HERE */
 
   .new_layout_section {
-    margin-top: 5em;
+    margin-top: -5em;
     gap: 30px;
   }
 
@@ -2764,7 +2798,7 @@ dropdown:after {
       "img2"
       "img3"
       "text";
-    padding: 0px 5%;
+    padding: 0px;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     max-width: 500px;
@@ -2991,7 +3025,7 @@ dropdown:after {
   }
 
   .valpetra-website-design-1 .overlap-group8-item {
-    margin-top: 4em;
+    margin-top: o;
   }
 
   .wooden-interior {
@@ -3020,9 +3054,8 @@ dropdown:after {
   .versitality-image-item img {
     width: 300px;
   }
-
-  .versitality-image-item:nth-child(odd) {
-    padding-top: 50px;
+  .versitality-image-item img {
+    height: 45vh;
   }
 
   .valpetra-website-design-1 .i-am-interested-in {
