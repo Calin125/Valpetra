@@ -112,3 +112,16 @@
   font-style: normal;
   font-weight: 400;
 }
+
+.section-title{
+  font-size: var(--font-size-xxxxxl) !important;
+}
+
+
+
+
+@media screen and  (max-width: 768px) {
+  .section-title{
+    font-size: var(--font-size-xxxl) !important;
+  }
+}
