@@ -115,6 +115,17 @@ function toggleInsideTabActive() {
 
 //Code to toggle the layout content - end
 
+
+
+
+
+
+
+
+
+
+
+
 //Code for the slider - start
 const slider = document.querySelector(".slider");
 const slides = document.querySelectorAll(".slide");
@@ -199,6 +210,18 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 //Code for the slider - end
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Code for versatility animation - start
 

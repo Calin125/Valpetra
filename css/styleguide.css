@@ -31,12 +31,13 @@
   font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 300;
+  line-height: 20px;
 }
 
 .minervamodern-regular-normal-black-44px {
   color: var(--black);
   font-family: var(--font-family-minervamodern);
-  font-size: 44px;
+  font-size: 52px;
   font-style: normal;
   font-weight: 400;
 }

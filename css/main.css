@@ -578,7 +578,10 @@
 
 .rotated-container {
   width: 600px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .new-impressions-title {
@@ -628,7 +631,7 @@
   width: 120%;
   z-index: 0;
   left: -50px;
-  top: 80px;
+  top: 50px;
 }
 
 .new-luxury-background-middle {
@@ -641,7 +644,7 @@
 
 .new-special-background-middle {
   position: absolute;
-  height: 40%;
+  height: 60%;
   z-index: 0;
   left: -50px;
   top: 30%;
@@ -652,7 +655,7 @@
   width: 120%;
   z-index: 0;
   left: -50px;
-  bottom: 80px;
+  bottom: 0px;
 }
 
 .red-title-subtext {
@@ -669,7 +672,7 @@
 .luxuries-info-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0em 5em;
+  gap: 2em 5em;
   margin: 50px 0px;
 }
 .luxury-item:nth-child(odd) {
@@ -707,6 +710,7 @@
 .luxury-border-bottom{
   border-bottom: 1px solid #00000030;
   padding-bottom: 20px;
+  min-height: 100px;
 }
 
 
@@ -821,6 +825,15 @@
   margin: -2rem auto 2rem auto;
   padding: 0px 100px;
 }
+
+.slider-wrapper1 {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0px 0px;
+  position: relative;
+  top: 32px;
+}
+
 .slider {
   width: 100%;
   margin: auto;
@@ -831,20 +844,41 @@
   display: flex;
   overflow: hidden;
 }
+
 .slide {
   display: none;
   flex: 1;
   transition: all 0.5s ease-in-out;
+  max-height: 80vh;
 }
+
+.slide1 {
+  display: none;
+  flex: 1;
+  transition: all 0.5s ease-in-out;
+}
+
 .slide.active {
   display: block;
 }
+
+.slide1.active {
+  display: block;
+}
+
 .slide img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
   object-position: center;
 }
+
+.slide1 img {
+  height: 600px;
+  min-width: 1000px;
+  object-fit: cover;
+}
+
 .prev-btn,
 .next-btn {
   position: absolute;
@@ -891,8 +925,21 @@
 }
 .pagination-btn {
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  transition: all 0.25s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.pagination-btn1 {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
   border-radius: 50%;
   border: 0;
   outline: 0;
@@ -903,11 +950,19 @@
 }
 
 .pagination-btn.active {
-  width: 3rem;
-  height: 1rem;
+  width: 2.5rem;
+  height: 0.7rem;
   border-radius: 2rem;
   background-color: #E60B18;
 }
+
+.pagination-btn1.active {
+  width: 2.5rem;
+  height: 0.7rem;
+  border-radius: 2rem;
+  background-color: #E60B18;
+}
+
 @media (min-width: 35em) {
   .controls {
     display: block;
@@ -920,7 +975,7 @@
 /* NEW SPECIAL CHALLET SECTION CSS START HERE */
 
 .new_special_challet_section {
-  padding: 250px 100px;
+  padding: 175px 100px 100px 100px;
   margin-top: 100px;
   position: relative;
 }
@@ -1538,7 +1593,7 @@
   display: flex;
   height: 145px;
   margin-top: 150px;
-  margin-bottom: 150px;
+  margin-bottom: 75px;
   min-width: 2198px;
 }
 
@@ -1774,7 +1829,7 @@
   min-height: 681px;
   max-width: 1920px;
   align-items: center;
-  margin: 220px auto 0px auto;
+  margin: 220px auto 50px auto;
 }
 
 .valpetra-website-design-1 .of-container {
@@ -2203,7 +2258,7 @@ dropdown:after {
   flex-shrink: 1;
   height: auto;
   justify-content: flex-start;
-  margin: 200px auto 0px auto;
+  margin: 100px auto 0px auto;
   width: 100%;
   max-width: 1920px;
   padding: 0px 7%;
@@ -2597,6 +2652,7 @@ dropdown:after {
   justify-content: center;
   gap: 20px;
   margin: 30px auto 0px auto;
+  cursor: pointer;
 }
 
 .new-wooden-interior{
@@ -2614,7 +2670,7 @@ dropdown:after {
   position: absolute;
   right: 0px;
   top: 0px;
-  padding: 32px 100px;
+  padding: 55px 100px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -2667,10 +2723,11 @@ dropdown:after {
 
 .new-get-in-touch-form-wrapper{
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -25%);
   z-index: 2;
+  max-width: 90%;
 }
 
 
@@ -2681,6 +2738,10 @@ dropdown:after {
   
   .new-impressions-img {
     width: 1200px;
+  }
+
+  .slide1 img{
+    width: 900px;
   }
 }
 
@@ -2701,6 +2762,10 @@ dropdown:after {
 
   .new-impressions-img{
     min-width: 800px;
+  }
+
+  .slide1 img{
+    width: 700px;
   }
 
   .impressions_section_new{
@@ -2724,7 +2789,7 @@ dropdown:after {
   }
 
   .new_special_challet_section{
-    padding:  250px 5%;
+    padding:  250px 5% 100px 5%;
   }
 
   .valpetra-website-design-1 .wooden-interior-text,
@@ -2762,11 +2827,11 @@ dropdown:after {
   }
 
   .luxuries-info-container{
-    gap: 0em 3em;
+    gap: 1em 3em;
   }
 
   .luxury-item-title-text{
-    font-size: 32px !important;
+    font-size: 40px !important;
   }
 
   .luxury-item-logo{
@@ -2967,7 +3032,7 @@ dropdown:after {
 
   .new_special_challet_section {
     margin-top: 0;
-    padding: 170px 50px;
+    padding: 170px 50px 100px 50px;
   }
   .new-impressions-line {
     height: 1px;
@@ -2991,6 +3056,14 @@ dropdown:after {
     min-width: 200px;
     object-fit: cover;
   }
+
+  .slide1 img{
+    height: auto;
+    max-width: 90%;
+    min-width: 200px;
+    object-fit: cover;
+  }
+
   .new-layout-toggle-buttons {
     margin-bottom: 1em;
   }
@@ -3012,7 +3085,7 @@ dropdown:after {
     width: 130%;
     z-index: 0;
     left: -50px;
-    top: 80px;
+    top: 100px;
   }
 
   .new-special-background-top {
@@ -3044,7 +3117,7 @@ dropdown:after {
     width: 130%;
     z-index: 0;
     left: -50px;
-    bottom: 80px;
+    bottom: 100px;
   }
 
   .red-title-subtext {
@@ -3616,6 +3689,15 @@ dropdown:after {
 
   .valpetra-website-design-1 .footer{
     margin: 50px auto;
+  }
+
+  .valpetra-website-design-1 .development-info{
+    padding: 30px 5%;
+  }
+  .rotated-container{
+    padding-bottom: 0px;
+    gap: 0px;
+    margin-bottom: -20px;
   }
 }
 
