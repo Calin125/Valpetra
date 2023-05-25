@@ -40,6 +40,9 @@ function updateSlider() {
       slide.classList.add("active");
     }
   });
+  // Wait for the transition to complete before updating opacity
+  
+
   // Update pagination buttons
 
   paginationBtns1.forEach((button, index) => {
@@ -81,6 +84,12 @@ function showSlides1() {
   slides1[currentSlide1 - 1].style.display = "block";
   paginationBtns1[currentSlide1 - 1].className += " active";
   console.log(currentSlide1);
-  setTimeout(showSlides1, 2000); // Change image every 2 seconds
+  setTimeout(() => {
+    slides1.forEach((slide, index) => {
+      console.log("here",index, currentSlide1);
+      slide.style.opacity = index === currentSlide1-1 ? '1' : '0';
+    });
+  }, 100);
+  setTimeout(showSlides1, 4000); // Change image every 2 seconds
 }
 //Code for the slider - end

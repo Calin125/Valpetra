@@ -207,7 +207,13 @@ function showSlides() {
   }
   slides[currentSlide - 1].style.display = "block";
   paginationBtns[currentSlide - 1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(() => {
+    slides.forEach((slide, index) => {
+      console.log("here",index, currentSlide);
+      slide.style.opacity = index === currentSlide-1 ? '1' : '0';
+    });
+  }, 100);
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 //Code for the slider - end
 
