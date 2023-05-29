@@ -1004,7 +1004,7 @@
   width: 100%;
   min-width: 300px;
   height: 1260px;
-  max-height: 100vh;
+  max-height: 80vh;
   overflow: hidden;
 }
 
@@ -3121,7 +3121,9 @@ dropdown:after {
   }
 
 
-
+  .slider-container-layout{
+    max-height: 70vw;
+  }
 
 }
 
