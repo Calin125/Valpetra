@@ -9,7 +9,7 @@
 .header-background-change {
   backdrop-filter: blur(50px);
   color: black !important;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .header-background-color-change {
@@ -55,7 +55,7 @@
 .nestled-in-the-heigh {
   color: var(--black);
   font-family: var(--font-family-europa-light-light);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-xxxl);
   font-weight: 300;
   letter-spacing: 0;
   line-height: 50px;
@@ -69,7 +69,7 @@
 }
 
 .nestled-in-the-heigh span {
-  font-size: var(--font-size-xxxxxl);
+  font-size: var(--font-size-xxxxl);
 }
 
 .valpetra-website-design-1 .group {
@@ -293,6 +293,10 @@
   white-space: nowrap;
 }
 
+.valpetra-website-design-1 .phone a {
+  color: inherit;
+}
+
 .valpetra-website-design-1 .header .group-right {
   display: flex;
   flex-direction: row;
@@ -364,19 +368,19 @@
 .header-menu-btn-line-top {
   height: 1px;
   width: 100%;
-  background-color: white;
+  background-color: black;
 }
 
 .header-menu-btn-line-middle {
   height: 1px;
   width: 50%;
-  background-color: white;
+  background-color: black;
 }
 
 .header-menu-btn-line-bottom {
-  height: 1px;
+  height: 1.2px;
   width: 100%;
-  background-color: white;
+  background-color: black;
 }
 
 .navbar-menu {
@@ -559,6 +563,7 @@
 .impressions_section_new {
   display: flex;
   justify-content: flex-end;
+  width: 100%;
 }
 
 .new-impressions-section-inner-container {
@@ -566,7 +571,7 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
 }
 
 .new-impressions-left {
@@ -824,6 +829,7 @@
   max-width: 1920px;
   margin: -2rem auto 2rem auto;
   padding: 0px 100px;
+  max-height: 100vh;
 }
 
 .slider-wrapper1 {
@@ -834,7 +840,7 @@
   top: 32px;
 }
 
-.slider {
+/* .slider {
   width: 100%;
   margin: auto;
   overflow: hidden;
@@ -909,7 +915,6 @@
 .prev-btn:disabled,
 .next-btn:disabled {
   cursor: default;
-  /* display: none; */
   background-color: #000;
   pointer-events: none;
 }
@@ -935,7 +940,8 @@
   display: inline-block;
   width: 0.7rem;
   height: 0.7rem;
-  border-radius: 50%;
+  aspect-ratio: 1/1;
+  border-radius: 100px;
   border: 0;
   outline: 0;
   background-color: rgba(0, 0, 0, 0.15);
@@ -948,7 +954,8 @@
   display: inline-block;
   width: 0.7rem;
   height: 0.7rem;
-  border-radius: 50%;
+  aspect-ratio: 1/1;
+  border-radius: 100px;
   border: 0;
   outline: 0;
   background-color: rgba(0, 0, 0, 0.3);
@@ -975,6 +982,110 @@
   .controls {
     display: block;
   }
+} */
+
+.new-layout-toggled-plans{
+  display: flex;
+  width: 100%;
+}
+
+
+
+.slider-container-impressions {
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+  height: 650px;
+  overflow: hidden;
+}
+
+.slider-container-layout {
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+  height: 1260px;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.slider-image-impressions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-image-layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  object-fit: cover;
+  aspect-ratio: initial;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-image-impressions.active {
+  opacity: 1;
+}
+
+.slider-image-layout.active {
+  opacity: 1;
+}
+
+
+.slider-dots-impressions {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.slider-dots-layout {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.slider-dot-impressions {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.slider-dot-layout {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.slider-dot-impressions.active {
+  background-color: #E60B18;
+  width: 40px;
+}
+
+.slider-dot-layout.active {
+  background-color: #E60B18;
+  width: 40px;
 }
 
 
@@ -1827,7 +1938,7 @@
 
 .valpetra-website-design-1 .allowing-for-a-warm-homely-atmosphere {
   color: var(--white);
-  font-family: var(--font-family-europa-regular-regular);
+  font-family: var(--font-family-europa-light-light);
   font-size: var(--font-size-xl);
   font-weight: 400;
   letter-spacing: 0;
@@ -2036,6 +2147,8 @@
   margin-top: 10px;
   height: 40px;
   width: 100%;
+  color: white;
+  font-family: var(--font-family-europa-light-light);
 }
 
 .form-message {
@@ -2045,6 +2158,7 @@
   margin-bottom: 40px;
   margin-top: 10px;
   width: 100%;
+  color: white;
 }
 
 .valpetra-website-design-1 .rectangle-93 {
@@ -2085,7 +2199,7 @@
 
 .valpetra-website-design-1 .the-valpetra-chalet {
   color: var(--white);
-  font-family: var(--font-family-europa-regular-regular);
+  font-family: var(--font-family-europa-light-light);
   font-size: var(--font-size-xl);
   font-weight: 400;
   letter-spacing: 0;
@@ -2103,7 +2217,7 @@
 
 .valpetra-website-design-1 .get-in-touch {
   color: var(--white);
-  font-family: var(--font-family-minervamodern-regular);
+  font-family: var(--font-family-minervamodern);
   font-size: var(--font-size-xxxxxl);
   font-weight: 400;
   letter-spacing: 0;
@@ -2541,6 +2655,11 @@ dropdown:after {
   white-space: nowrap;
 }
 
+.valpetra-website-design-1 .flex-col-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .valpetra-website-design-1 .line-9 {
   height: 1px;
   margin-top: 20px;
@@ -2702,6 +2821,10 @@ dropdown:after {
   gap: 20px;
 }
 
+.new-wooden-interior-img{
+  min-height: 400px;
+}
+
 .new-get-in-touch-up{
   position: relative;
   width: 100%;
@@ -2711,6 +2834,7 @@ dropdown:after {
   position: relative;
   display: block;
   width: 100%;
+  min-height: 400px;
 }
 
 .new-get-in-touch-text{
@@ -2754,6 +2878,116 @@ dropdown:after {
   max-width: 90%;
 }
 
+.map-container{
+  width: 100%;
+  position: relative;
+  mix-blend-mode: luminosity;
+}
+
+.map-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.map-gradient-top{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 30%;
+  width: 100%;
+  z-index: 1;
+  background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+}
+
+.map-gradient-right{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 30%;
+  z-index: 1;
+  background: transparent linear-gradient(270deg, #FFFFFF 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+}
+
+.map-gradient-bottom{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 30%;
+  width: 100%;
+  z-index: 1;
+  background: transparent linear-gradient(0deg, #FFFFFF 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+}
+
+.map-gradient-left{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 30%;
+  z-index: 1;
+  background: transparent linear-gradient(90deg, #FFFFFF 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+}
+
+.map-address-container{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.map-address-container_logo{
+  background-color: #FFFFFF;
+  border-radius: 1000px;
+  height: 100px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-address-container_logo img{
+  width: 60%;
+  height: auto;
+}
+
+.map-address-container_address,
+.map-address-container_phone{
+  font-size: 20px;
+  font-family: var(--font-family-europa-regular-regular);
+  color: #000000;
+  text-align: left;
+}
+
+.map-address-container_phone a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.map-address-container_maplink{
+  font-size: 20px;
+  font-family: var(--font-family-europa-regular-regular);
+  color: #E30615;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.map-address-container_maplink a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.map-address-container_maplink:hover{
+  border-bottom: 2px solid #E30615;
+}
 
 @media (min-width: 1440px) {
   .new-special-challet-text p {
@@ -2770,6 +3004,22 @@ dropdown:after {
 }
 
 @media (max-width: 1024px) {
+  .valpetra-website-design-1 .header{ 
+    height: 80px;
+  }
+
+  .valpetra-website-design-1 .npkf-alpes_promo_-va{
+    height: 60px;
+  }
+
+  /* .phone{
+    font-size: 18px !important;
+  } */
+
+  .valpetra-website-design-1 .ma_npkf{
+    height: 28px;
+  }
+
   .rue-de-mdran-21,
   .address-1,
   .phone-2,
@@ -2793,11 +3043,15 @@ dropdown:after {
   }
 
   .impressions_section_new{
-    margin-left: 200px;
+    margin-left: 0px;
+  }
+
+  .new-impressions-left{
   }
 
   .nestled-in-the-heigh{
     width: 90%;
+    font-size: var(--font-size-xxl);
   }
 
   .new_luxury_section{
@@ -2810,6 +3064,10 @@ dropdown:after {
 
   .slider-wrapper{
     padding: 0 5%;
+  }
+
+  .slider-wrapper1{
+    min-width: 600px;
   }
 
   .new_special_challet_section{
@@ -2861,10 +3119,15 @@ dropdown:after {
   .luxury-item-logo{
     height: 30px;
   }
+
+
+
+
 }
 
 @media (max-width: 768px) {
   /* HEADER MENU BUTTON CSS START HERE */
+
 
   .navbar-menu {
     width: 90%;
@@ -3010,7 +3273,7 @@ dropdown:after {
     display: flex;
     justify-content: flex-end;
     margin-bottom: -5em;
-    margin-top: -8em;
+    margin-top: -2em;
     margin-left: 0px;
   }
 
@@ -3145,7 +3408,7 @@ dropdown:after {
   }
 
   .red-title-subtext {
-    font-size: var(--font-size-xl) !important;
+    font-size: var(--font-size-xxl) !important;
     text-align: center;
   }
 
@@ -3169,8 +3432,8 @@ dropdown:after {
   }
 
   .luxury-item-title-text {
-    font-size: var(--font-size-xxxl) !important;
-    text-align: center;
+    font-size: 38px !important;
+    text-align: left;
     line-height: 40px;
   }
 
@@ -3362,7 +3625,7 @@ dropdown:after {
   }
 
   .valpetra-website-design-1 .offers-space-for-events-of-all-kinds {
-    font-size: var(--font-size-xl) !important;
+    font-size: var(--font-size-xxl) !important;
     color: red;
   }
 
@@ -3723,6 +3986,86 @@ dropdown:after {
     gap: 0px;
     margin-bottom: -20px;
   }
+
+  .luxury-item-description {
+    font-size: 30px !important;
+  }
+
+  .slider-wrapper1{
+    width: 95%;
+    padding-right: 5%;
+  }
+
+  .rotated-second-line{
+    width: 100%;
+  }
+
+  .new-impressions-line{
+    width: 50%;
+  }
+
+  .slider-container-layout{
+    max-height: 70vw;
+  }
 }
 
+@media (max-width: 480px) {
+  .valpetra-website-design-1 .phone{
+    font-size: 11px !important;
+  }
 
+  .map-image{
+    min-height: 400px;
+  }
+
+  .map-address-container_logo{
+    height: 50px;
+  }
+
+  .map-address-container_address, .map-address-container_phone{
+    font-size: 16px;
+  }
+
+  .map-address-container_maplink{
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .valpetra-website-design-1 .name{
+    font-size: 16px !important;
+  }
+
+  .valpetra-website-design-1 .name a{
+    color: #000000 !important;
+  }
+
+  .valpetra-website-design-1 .flex-col-item{
+    font-size: 16px !important;
+  }
+
+  .slider-container-layout {
+    position: relative;
+    width: 100%;
+    min-width: 300px;
+    height: 300px;
+    max-height: 80vh;
+    overflow: hidden;
+  }
+
+  .slider-wrapper1{
+    width: 95%;
+    padding-right: 5%;
+    min-width: 300px;
+    max-height: 70vw;
+  }
+
+  .slider-container-impressions{
+    max-height: 80vw;
+  }
+
+  .slider-image-impressions{
+    height: 70vw;
+  }
+
+  .slider-dots-impressions{}
+}

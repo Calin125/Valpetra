@@ -15,7 +15,14 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <title>Valpetra Chalet</title>
-  <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="./img/favicon.ico">
+  <link rel="manifest" href="./img/site.webmanifest">
+  <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#E6000E">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="theme-color" content="#FFFFFF">
 </head>
 
 <body>
@@ -25,13 +32,17 @@
       <header data-aos="fade-down" data-aos-duration="700" class="header" id="header">
         <div class="group-left">
           <div class="overlap-group1">
-            <img class="npkf-alpes_promo_-va" src="img/logo-1.png" alt="NPKF Alpes_PROMO_Valpetra_Logo_RVB_Regular" />
+            <a href="./index.html">
+              <img class="npkf-alpes_promo_-va" src="img/logo-1.png" alt="NPKF Alpes_PROMO_Valpetra_Logo_RVB_Regular" />
+            </a>
           </div>
           <div class="line-51" id="line"></div>
-          <p class="phone">+41 27 565 19 30</p>
+          <p class="phone"><a href="tel:+41275651930">+41 27 565 19 30</a></p>
         </div>
         <div class="group-right">
-          <img class="ma_npkf" src="img/ma-npkf@1x.png" alt="MA_NPKF" />
+          <a href="https://www.naef-prestige.ch/agence-immobiliere-luxe-alpes/?utm_source=gmb&utm_medium=organic&utm_campaign=website-verbier" target="_blank">
+            <img class="ma_npkf" src="img/ma-npkf@1x.png" alt="MA_NPKF" />
+          </a>
           <!--   -->
           <!-- <div class="group-2">
               <img class="line" src="img/line-2@1x.png" alt="Line 2" />
@@ -49,12 +60,12 @@
             </div>
             <ul class="navbar-menu-links">
               <li><a href="#home">Home</a></li>
-              <li><a href="#location">Location</a></li>
-              <li><a href="#experiences">Experiences</a></li>
+              <li><a href="#impressions">Impressions</a></li>
+              <li><a href="#luxury">Luxury</a></li>
               <li><a href="#layout">Layout of the chalet</a></li>
-              <li><a href="#special">Special Amenities</a></li>
-              <li><a href="#versatility">Versatility of the chalet</a></li>
-              <li><a href="#get">Get in Touch</a></li>
+              <li><a href="#special">High-end experiences</a></li>
+              <li><a href="#versatility">What makes Valpetra so special</a></li>
+              <li><a href="#get-in-touch">Get in Touch</a></li>
               <li><a href="#contact">Contact & Address</a></li>
               <li>
                 <a href="#french"><span>Francais</span></a>
@@ -67,20 +78,22 @@
         <!-- <img class="white-logo" src="img/white-logo.png" alt="white logo" /> -->
         <img class="cover-1-1" src="img/cover_1.png" alt="cover 1" />
         <img class="cover-1-1-mobile" src="img/Valpetra Header Wide Cut.png" alt="cover 1" />
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-easin="ease-out" class="hero-button">
-          <div class="explore-valpetra">EXPLORE VALPETRA</div>
-          <img class="icon-ionic-ios-arrow-round-forward" src="img/icon-ionic-ios-arrow-round-forward-1@1x.png"
-            alt="Icon ionic-ios-arrow-round-forward" />
-        </div>
+        <a href="#subhero">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-easin="ease-out" class="hero-button">
+            <div class="explore-valpetra">EXPLORE VALPETRA</div>
+            <img class="icon-ionic-ios-arrow-round-forward" src="img/icon-ionic-ios-arrow-round-forward-1@1x.png"
+              alt="Icon ionic-ios-arrow-round-forward" />
+          </div>
+        </a>
       </div>
-      <div class="subhero_section">
+      <div class="subhero_section" >
         <div class="image-overlay-container">
           <img src="img\white-snowy-edge.png" alt="" />
         </div>
         <div class="subhero-logo"></div>
         <p data-aos="fade-up" data-aos-duration="1000" data-aos-easin="ease-in-out" class="nestled-in-the-heigh">
           Nestled in the heights of
-          <span class="allura-normal-black-47px">Verbier</span>
+          <span class="allura-normal-black-47px"  id="subhero">Verbier</span>
           , this Chalet is one of the most prestigious Swiss chalets, located
           in the much sought-after
           <span class="allura-normal-black-47px">Alpine</span>
@@ -113,7 +126,7 @@
           </div>
       </div> -->
       <!--new commit-->
-      <div class="impressions_section_new" id="location">
+      <div class="impressions_section_new" id="impressions">
         <div class="new-impressions-section-inner-container">
           <div class="new-impressions-left">
             <div class="rotated-container">
@@ -131,8 +144,7 @@
           </div>
           <div data-aos="zoom-out-left" data-aos-duration="750" class="new-impressions-right">
             <div class="slider-wrapper1">
-              <!-- The Slider -->
-              <div class="slider1">
+              <!-- <div class="slider1">
                 <div class="slides">
                   <div class="slide1 active">
                     <img src="./img/lounge.jpg" alt="image 1" />
@@ -147,7 +159,6 @@
                     <img src="./img/kitchen1.jpg" alt="image 4" />
                   </div>
                 </div>
-                <!-- The previous and next buttons -->
                 <button class="controls prev-btn" id="prev1" style="display: none;">
                   <svg viewBox="0 0 320 512" width="100" title="chevron-left">
                     <path
@@ -164,12 +175,24 @@
                 </button>
               </div>
         
-              <!-- The pagination -->
               <div class="pagination" style="width: 90%;margin-top: 1rem;">
                 <button class="pagination-btn1 active" data-slide="1"></button>
                 <button class="pagination-btn1" data-slide="2"></button>
                 <button class="pagination-btn1" data-slide="3"></button>
                 <button class="pagination-btn1" data-slide="4"></button>
+              </div> -->
+              <div class="slider-container-impressions">
+                <img class="slider-image-impressions active" src="./img/lounge.jpg" alt="Image 1">
+                <img class="slider-image-impressions" src="./img/swiming-pool-1.jpg" alt="Image 2">
+                <img class="slider-image-impressions" src="./img/wine-tasting.png" alt="Image 3">
+                <img class="slider-image-impressions" src="./img/kitchen1.jpg" alt="Image 4">
+                
+                <div class="slider-dots-impressions">
+                  <span class="slider-dot-impressions active"></span>
+                  <span class="slider-dot-impressions"></span>
+                  <span class="slider-dot-impressions"></span>
+                  <span class="slider-dot-impressions"></span>
+                </div>
               </div>
             </div>
           </div>
@@ -283,7 +306,7 @@
           </div>
         </div>
       </div> -->
-      <div class="new_luxury_section" id="experiences">
+      <div class="new_luxury_section" id="luxury">
         <img class="new-luxury-background-top" src="img/snowy-bh-1@1x.png" alt="" />
         <img class="new-luxury-background-middle" src="img/snowy-bh@1x - Copy.png" alt="" />
         <img class="new-luxury-background-bottom" src="img/snowy-bh@1x.png" alt="" />
@@ -494,8 +517,7 @@
         </div>
         <div class="new-layout-toggled-plans" id="insideCarousel" style="display: none;">
           <div class="slider-wrapper">
-            <!-- The Slider -->
-            <div class="slider">
+            <!-- <div class="slider">
               <div class="slides">
                 <div class="slide active">
                   <img src="./img/interior-plan1.png" alt="image 1" />
@@ -528,7 +550,6 @@
                   <img src="./img/interior-plan10.png" alt="image 4" />
                 </div>
               </div>
-              <!-- The previous and next buttons -->
               <button class="controls prev-btn" id="prev" style="display: none;">
                 <svg viewBox="0 0 320 512" width="100" title="chevron-left">
                   <path
@@ -544,8 +565,6 @@
                 </svg>
               </button>
             </div>
-      
-            <!-- The pagination -->
             <div class="pagination">
               <button class="pagination-btn active" data-slide="1"></button>
               <button class="pagination-btn" data-slide="2"></button>
@@ -557,13 +576,39 @@
               <button class="pagination-btn" data-slide="8"></button>
               <button class="pagination-btn" data-slide="9"></button>
               <button class="pagination-btn" data-slide="10"></button>
+            </div> -->
+            <div class="slider-container-layout">
+              <img class="slider-image-layout active" src="./img/interior-plan1.png" alt="Image 1">
+              <img class="slider-image-layout" src="./img/interior-plan2.png" alt="Image 2">
+              <img class="slider-image-layout" src="./img/interior-plan3.png" alt="Image 3">
+              <img class="slider-image-layout" src="./img/interior-plan4.png" alt="Image 4">
+              <img class="slider-image-layout" src="./img/interior-plan5.png" alt="Image 5">
+              <img class="slider-image-layout" src="./img/interior-plan6.png" alt="Image 6">
+              <img class="slider-image-layout" src="./img/interior-plan7.png" alt="Image 7">
+              <img class="slider-image-layout" src="./img/interior-plan8.png" alt="Image 8">
+              <img class="slider-image-layout" src="./img/interior-plan9.png" alt="Image 9">
+              <img class="slider-image-layout" src="./img/interior-plan10.png" alt="Image 10">
+
+              
+              <div class="slider-dots-layout">
+                <span class="slider-dot-layout active"></span>
+                <span class="slider-dot-layout"></span>
+                <span class="slider-dot-layout"></span>
+                <span class="slider-dot-layout"></span>
+                <span class="slider-dot-layout"></span>
+                <span class="slider-dot-layout"></span>
+                <span class="slider-dot-layout"></span>
+                <span class="slider-dot-layout"></span>
+                <span class="slider-dot-layout"></span>
+                <span class="slider-dot-layout"></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="sliding_text_section">
         <div class="sliding-text">
-          <h1 class="valpetra-chalet">VALPETRA CHALET</h1>
+          <div class="valpetra-chalet-1">VALPETRA CHALET</div>
           <img class="logo-mnt-2" src="img/logo-mnt-7@1x.png" alt="logo mnt" />
           <div class="valpetra-chalet-1">VALPETRA CHALET</div>
           <img class="logo-mnt-2" src="img/logo-mnt-7@1x.png" alt="logo mnt" />
@@ -792,43 +837,45 @@
             <img class="line-75" src="img/line-75@1x.png" alt="Line 75" />
           </div>
         </div>
-        <div class="new-get-in-touch-down">
+        <div class="new-get-in-touch-down" id="get-in-touch">
           <div class="new-get-in-touch-black-gradient"></div>
           <img class="new-get-in-touch-bg2" src="img/vpbg@1x.png" alt="vpbg" />
           <div class="new-get-in-touch-form-wrapper">
             <div data-aos="fade-up" data-aos-duration="1500" class="rectangle-93">
               <div class="get-in-touch">GET IN TOUCH</div>
-              <div class=".form-col-item">
-                <div class="place-1 place-5 europa-light-light-white-18px padding-left">
-                  Name
-                </div>
-                <input type="text" class="form-input" />
-              </div>
-              <div class="form-inner-wrapper">
+              <form action="">
                 <div class=".form-col-item">
-                  <div class="phone-1 phone-3 europa-light-light-white-18px padding-left">
-                    Phone
+                  <div class="place-1 place-5 europa-light-light-white-18px padding-left">
+                    Name
                   </div>
-                  <input type="text" class="form-input" />
+                  <input type="text" class="form-input" required/>
                 </div>
-                <div class=".form-col-item">
-                  <div class="email europa-light-light-white-18px padding-left">
-                    Email
+                <div class="form-inner-wrapper">
+                  <div class=".form-col-item">
+                    <div class="phone-1 phone-3 europa-light-light-white-18px padding-left">
+                      Phone
+                    </div>
+                    <input type="tel" class="form-input" required/>
                   </div>
-                  <input type="text" class="form-input" />
+                  <div class=".form-col-item">
+                    <div class="email europa-light-light-white-18px padding-left">
+                      Email
+                    </div>
+                    <input type="email" class="form-input" required/>
+                  </div>
                 </div>
-              </div>
-              <div class="message europa-light-light-white-18px padding-left">
-                Message
-              </div>
-              <textarea name="" id="" cols="30" rows="4" class="form-message"></textarea>
-              <div>
-                <button class="submitButton">
-                  <div class="submit">SUBMIT</div>
-                  <img class="icon-ionic-ios-arrow-round-forward" src="img/icon-ionic-ios-arrow-round-forward-1@1x.png"
-                    alt="Icon ionic-ios-arrow-round-forward" />
-                </button>
-              </div>
+                <div class="message europa-light-light-white-18px padding-left">
+                  Message
+                </div>
+                <textarea name="" id="" cols="30" rows="4" class="form-message" required></textarea>
+                <div>
+                  <button class="submitButton">
+                    <div class="submit">SUBMIT</div>
+                    <img class="icon-ionic-ios-arrow-round-forward" src="img/icon-ionic-ios-arrow-round-forward-1@1x.png"
+                      alt="Icon ionic-ios-arrow-round-forward" />
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -864,9 +911,30 @@
             <img class="line-82" src="img/line-82@1x.png" alt="Line 82" />
           </div> -->
           <div data-aos="fade-left" data-aos-duration="1500" class="address-group-right">
-            <a href="https://www.google.com/maps/place/Rue+de+M%C3%A9dran+21,+1936+Verbier,+Switzerland/@46.0946078,7.2294155,17z/data=!3m1!4b1!4m6!3m5!1s0x478ece32c4cdfccb:0x9478ff64fd42b9ce!8m2!3d46.0946041!4d7.2319904!16s%2Fg%2F11c1x4_x0h" target="_blank">
+            <div class="map-container">
+              <img src="./img/map-image.png" alt="" class="map-image">
+              <div class="map-gradient-top"></div>
+              <div class="map-gradient-right"></div>
+              <div class="map-gradient-bottom"></div>
+              <div class="map-gradient-left"></div>
+              <div class="map-address-container">
+                <div class="map-address-container_logo">
+                  <img src="./img/logo-small.png" alt="">
+                </div>
+                <div class="map-address-container_address">
+                  Rue de Médran 21 <br> 1936 Verbier
+                </div>
+                <div class="map-address-container_phone">
+                  <a href="tel:+41275651930">+41 27 565 19 30</a>
+                </div>
+                <div  class="map-address-container_maplink">
+                  <a href="https://www.google.com/maps/place/Rue+de+M%C3%A9dran+21,+1936+Verbier,+Switzerland/@46.0946078,7.2294155,17z/data=!3m1!4b1!4m6!3m5!1s0x478ece32c4cdfccb:0x9478ff64fd42b9ce!8m2!3d46.0946041!4d7.2319904!16s%2Fg%2F11c1x4_x0h" target="_blank">View on Google Maps</a>
+                </div>
+              </div>
+            </div>
+            <!-- <a href="https://www.google.com/maps/place/Rue+de+M%C3%A9dran+21,+1936+Verbier,+Switzerland/@46.0946078,7.2294155,17z/data=!3m1!4b1!4m6!3m5!1s0x478ece32c4cdfccb:0x9478ff64fd42b9ce!8m2!3d46.0946041!4d7.2319904!16s%2Fg%2F11c1x4_x0h" target="_blank">
               <img class="screenshot-2023-03-07-at-172854" src="img/Updated Map Address.png" alt="Screenshot 2023-03-07 at 17.28.54" />
-            </a>
+            </a> -->
             <!-- <div class="overlap-group1-1">
                   <img class="line-88" src="img/line-82@1x.png" alt="Line 88" />
                   <div class="rectangle-89"></div>
@@ -891,7 +959,9 @@
             <img src="img/Broker.png" alt="" />
           </div>
           <div class="broker-info-right">
-            <img class="ma_npkf-1" src="img/ma-npkf-1@1x.png" alt="MA_NPKF" style="margin-bottom: 75px;"/>
+            <a href="https://www.naef-prestige.ch/agence-immobiliere-luxe-alpes/?utm_source=gmb&utm_medium=organic&utm_campaign=website-verbier" target="_blank">
+              <img class="ma_npkf-1" src="img/ma-npkf-1@1x.png" alt="MA_NPKF" style="margin-bottom: 75px;"/>
+            </a>
             <div class="your-broker europa-regular-regular-normal-black-18px">
               Your Broker
             </div>
@@ -903,14 +973,14 @@
               Telephone
             </div>
             <p class="flex-col-item europa-light-light-black-30px">
-              +41 79 527 54 93
+              <a href="tel:+41795275493">+41 79 527 54 93</a>
             </p>
             <img class="line-9" src="img/line-82@1x.png" alt="Line 92" />
             <div class="email-1 europa-regular-regular-normal-black-18px">
               Email
             </div>
             <div class="flex-col-item europa-light-light-black-30px">
-              aspi@naefprestige-knightfrank.ch
+              <a href="mailto:aspi@naefprestige-knightfrank.ch">aspi@naefprestige-knightfrank.ch</a>
             </div>
             <img class="line-9" src="img/line-82@1x.png" alt="Line 92" />
           </div>
@@ -931,9 +1001,13 @@
       <img class="line-94" src="img/line-94@1x.png" alt="Line 94" />
       <div class="development-info europa-light-light-black-15px">
         <p class="copyright-valpetra-2">
-          Copyright Valpetra 2023. All Rights Reserved
+          Copyright Valpetra <span id="copyright">
+            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+        </span>. All Rights Reserved
         </p>
-        <div class="made-by-aeximius">Made by AEXIMIUS</div>
+        <a href="https://aeximius.com/" target="_blank">
+          <div class="made-by-aeximius">Made by AEXIMIUS</div>
+        </a>
       </div>
     </div>
   </div>
