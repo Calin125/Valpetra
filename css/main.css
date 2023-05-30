@@ -564,6 +564,7 @@
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  margin-top: -225px;
 }
 
 .new-impressions-section-inner-container {
@@ -591,7 +592,7 @@
 
 .new-impressions-title {
   color: var(--cape-cod);
-  font-family: var(--font-family-minervamodern-regular);
+  font-family: var(--font-family-minervamodern);
   font-size: 63px;
   font-weight: 400;
   letter-spacing: 0;
@@ -1718,6 +1719,7 @@
 
 .sliding-text{
   display: flex;
+  align-items: center;
   white-space: nowrap;
   animation: scroll-left 15s linear infinite; 
 }
@@ -2150,6 +2152,7 @@
   width: 100%;
   color: white;
   font-family: var(--font-family-europa-light-light);
+  font-size: 26px !important;
 }
 
 .form-message {
@@ -2160,6 +2163,7 @@
   margin-top: 10px;
   width: 100%;
   color: white;
+  font-size: 26px !important;
 }
 
 .valpetra-website-design-1 .rectangle-93 {
@@ -2935,7 +2939,7 @@ dropdown:after {
 
 .map-address-container{
   position: absolute;
-  top: 78%;
+  top: 85%;
   left: 53%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -3833,6 +3837,7 @@ dropdown:after {
   g .valpetra-website-design-1 .form-input {
     margin-top: 0px;
     margin-bottom: 20px;
+    font-size: 16px !important;
   }
 
   .valpetra-website-design-1 .padding-left {
@@ -4135,5 +4140,12 @@ dropdown:after {
     position: absolute;
     top: 85%;
     left: 59%;
+  }
+  .valpetra-website-design-1 .form-input {
+    font-size: 16px !important;
+  }
+
+  .form-message{
+    font-size: 16px !important;
   }
 }
