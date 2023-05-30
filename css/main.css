@@ -1753,7 +1753,7 @@
 
 .valpetra-website-design-1 .valpetra-chalet-1 {
   color: var(--monza);
-  font-family: var(--font-family-minervamodern-regular);
+  font-family: var(--font-family-minervamodern);
   font-size: 121px;
   font-weight: 400;
   letter-spacing: 0;
@@ -1945,6 +1945,7 @@
   line-height: 22px;
   text-align: right;
   white-space: nowrap;
+  padding-left: 30%;
 }
 
 .valpetra-website-design-1 .line-95 {
@@ -2207,12 +2208,14 @@
   text-align: right;
   width: 100%;
   max-width: 525px;
+  padding-left: 30%;
 }
 
 .valpetra-website-design-1 .line-75 {
   height: 1px;
   object-fit: cover;
   width: 594px;
+
 }
 
 .valpetra-website-design-1 .get-in-touch {
@@ -2932,8 +2935,8 @@ dropdown:after {
 
 .map-address-container{
   position: absolute;
-  top: 75%;
-  left: 50%;
+  top: 78%;
+  left: 53%;
   transform: translate(-50%, -50%);
   z-index: 2;
   display: flex;
@@ -2989,7 +2992,11 @@ dropdown:after {
   border-bottom: 2px solid #E30615;
 }
 
-@media (min-width: 1440px) {
+.map-image-mobile{
+  display: none;
+}
+
+@media (max-width: 1440px) {
   .new-special-challet-text p {
     font-size: var(--font-size-xl);
   }
@@ -3000,6 +3007,15 @@ dropdown:after {
 
   .slide1 img{
     width: 900px;
+  }
+
+  .map-image{
+    min-height: 400px;
+    display: block;
+  }
+
+  .map-image-mobile{
+    display: none
   }
 }
 
@@ -3046,9 +3062,6 @@ dropdown:after {
     margin-left: 0px;
   }
 
-  .new-impressions-left{
-  }
-
   .nestled-in-the-heigh{
     width: 90%;
     font-size: var(--font-size-xxl);
@@ -3060,6 +3073,17 @@ dropdown:after {
 
   .new-layout-toggle-container{
     padding: 0 5%;
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .new-layout-img-container img{
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .toggled-text-item{
+    padding: 0px;
+    padding-bottom: 20px;
   }
 
   .slider-wrapper{
@@ -3124,6 +3148,20 @@ dropdown:after {
   .slider-container-layout{
     max-height: 70vw;
   }
+
+  .versitality-image-item img{
+    width: 400px;
+    margin: 0px 30px;
+  }
+
+  /* .map-image{
+    min-height: 400px;
+    display: block;
+  }
+
+  .map-image-mobile{
+    display: none;
+  } */
 
 }
 
@@ -3227,10 +3265,10 @@ dropdown:after {
 
   .subhero_section {
     position: relative;
-    height: 300px;
+    height: 350px;
     z-index: 5;
     top: 0px;
-    margin: 50px 0px;
+    margin: 50px 0px 75px 0px;
   }
 
   .subhero-logo {
@@ -3254,7 +3292,7 @@ dropdown:after {
     line-height: 35px;
     padding: 0 1em;
     width: 90%;
-    margin: 100px auto 0px auto;
+    margin: 50px auto 0px auto;
     top: 0;
   }
 
@@ -3275,7 +3313,7 @@ dropdown:after {
     display: flex;
     justify-content: flex-end;
     margin-bottom: -5em;
-    margin-top: -2em;
+    margin-top: -20em;
     margin-left: 0px;
   }
 
@@ -3316,7 +3354,7 @@ dropdown:after {
     gap: 1em;
   }
   .sliding_text_section {
-    margin: 5em 0 0 0;
+    margin: 50px 0px;
   }
 
   .new_special_challet_section {
@@ -3686,13 +3724,13 @@ dropdown:after {
   }
 
   .valpetra-website-design-1 .the-valpetra-chalet {
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-m);
     line-height: 16px;
   }
 
   .valpetra-website-design-1 .line-75 {
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
+    max-width: 70%;
   }
 
   .valpetra-website-design-1 .with-other-treasures-in-store {
@@ -3744,7 +3782,7 @@ dropdown:after {
   }
 
   .valpetra-website-design-1 .allowing-for-a-warm-homely-atmosphere {
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-m);
     line-height: 16px;
   }
 
@@ -4009,6 +4047,20 @@ dropdown:after {
   .slider-container-layout{
     max-height: 70vw;
   }
+
+  .versitality-image-item img{
+    margin: 0px 00px;
+  }
+
+  /* .map-image{
+    min-height: 400px;
+    display: block;
+  }
+
+  .map-image-mobile{
+    display: none;
+  } */
+
 }
 
 @media (max-width: 480px) {
@@ -4018,6 +4070,11 @@ dropdown:after {
 
   .map-image{
     min-height: 400px;
+    display: none;
+  }
+
+  .map-image-mobile{
+    display: block;
   }
 
   .map-address-container_logo{
@@ -4069,5 +4126,14 @@ dropdown:after {
     height: 70vw;
   }
 
-  .slider-dots-impressions{}
+  .valpetra-website-design-1 .form-inner-wrapper {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .map-address-container{
+    position: absolute;
+    top: 85%;
+    left: 59%;
+  }
 }

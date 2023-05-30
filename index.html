@@ -912,15 +912,16 @@
           </div> -->
           <div data-aos="fade-left" data-aos-duration="1500" class="address-group-right">
             <div class="map-container">
-              <img src="./img/Valpetra Map.jpg" alt="" class="map-image">
+              <img src="./img/Valpetra Map Desktop.jpg" alt="" class="map-image">
+              <img src="./img/VALPETRA Map Mobile.jpg" alt="" class="map-image-mobile">
               <div class="map-gradient-top"></div>
               <div class="map-gradient-right"></div>
               <div class="map-gradient-bottom"></div>
               <div class="map-gradient-left"></div>
               <div class="map-address-container">
-                <div class="map-address-container_logo">
+                <!-- <div class="map-address-container_logo">
                   <img src="./img/logo-small.png" alt="">
-                </div>
+                </div> -->
                 <div class="map-address-container_address">
                   Rue de Médran 21 <br> 1936 Verbier
                 </div>
@@ -1001,11 +1002,11 @@
       <img class="line-94" src="img/line-94@1x.png" alt="Line 94" />
       <div class="development-info europa-light-light-black-15px">
         <p class="copyright-valpetra-2">
-          Copyright Valpetra <span id="copyright">
-            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+          Copyright Valpetra <span id="copyright" style="display: inline-block;">
+            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear())).replace(/\s/g, '')</script>
         </span>. All Rights Reserved
         </p>
-        <a href="https://aeximius.com/" target="_blank">
+        <a href="https://aeximius.com/" target="_blank" style="color:inherit">
           <div class="made-by-aeximius">Made by AEXIMIUS</div>
         </a>
       </div>
